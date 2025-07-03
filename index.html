@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Moderna</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <title>Landing Tech Clean</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,36 +13,25 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(120deg, #6a11cb, #2575fc);
+      font-family: 'Inter', sans-serif;
+      background: #1e1e2f;
       color: white;
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 2rem;
-      animation: bgmove 10s ease infinite alternate;
-    }
-
-    @keyframes bgmove {
-      0% {
-        background-position: 0% 50%;
-      }
-      100% {
-        background-position: 100% 50%;
-      }
     }
 
     .wrapper {
       max-width: 1000px;
       width: 100%;
-      background: rgba(255, 255, 255, 0.05);
+      background: #2a2a40;
       border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      box-shadow: 0 0 30px rgba(0, 255, 200, 0.1);
       overflow: hidden;
       display: flex;
       flex-wrap: wrap;
-      backdrop-filter: blur(8px);
     }
 
     .content {
@@ -51,15 +40,16 @@
     }
 
     .content h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
       font-weight: 700;
+      color: #00f5d4;
     }
 
     .content p {
       font-size: 1.1rem;
       margin-bottom: 2rem;
-      color: #e0e0e0;
+      color: #ddd;
     }
 
     form {
@@ -77,7 +67,7 @@
     }
 
     input {
-      background: rgba(255,255,255,0.9);
+      background: #eee;
       color: #333;
     }
 
@@ -86,16 +76,16 @@
     }
 
     button {
-      background: #ff416c;
-      color: white;
-      font-weight: 600;
+      background: #00f5d4;
+      color: #1e1e2f;
+      font-weight: 700;
       cursor: pointer;
-      box-shadow: 0 8px 18px rgba(255, 65, 108, 0.6);
-      transition: transform 0.2s ease, background 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 255, 200, 0.3);
+      transition: background 0.3s ease, transform 0.2s ease;
     }
 
     button:hover {
-      background: #ff1e56;
+      background: #00e0be;
       transform: scale(1.05);
     }
 
@@ -108,8 +98,9 @@
 
     .image {
       flex: 1;
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') center center/cover no-repeat;
       min-height: 300px;
+      filter: brightness(0.9);
     }
 
     @media (max-width: 768px) {
@@ -129,14 +120,14 @@
 
   <div class="wrapper">
     <div class="content">
-      <h1>Você no próximo nível</h1>
-      <p>Cadastre-se para desbloquear conteúdo exclusivo e oportunidades de mentoria.</p>
+      <h1>Conecte-se ao Futuro</h1>
+      <p>Inscreva-se e receba conteúdos exclusivos sobre tecnologia, inovação e crescimento profissional.</p>
       <form onsubmit="handleSubmit(event)">
         <input type="text" placeholder="Seu nome" required />
         <input type="email" placeholder="Seu e-mail" required />
-        <button type="submit">Começar agora</button>
+        <button type="submit">Quero aprender!</button>
       </form>
-      <p id="msg">Inscrição enviada com sucesso!</p>
+      <p id="msg">Cadastro feito com sucesso! 🎉</p>
     </div>
     <div class="image"></div>
   </div>
